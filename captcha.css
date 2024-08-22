@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h2{
+    padding: 30px 0px;
+}
+p{
+    border-radius: 5px;
+    width: 120px;
+    padding: 10px 20px;
+    height: 38px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgb(170, 170, 170);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+input[type="text"]{
+    padding: 6px 10px;
+    width: 280px;
+    margin: 25px 0px 20px 0px;
+    font-family:monospace;
+    font-size: 16px;
+}
+button{
+    margin: 10px 0px;
+    border: none;
+    padding: 8px 12px;
+    background-color: rgb(17, 121, 17);
+    color: white;
+    border-radius: 5px;
+}
+button:active{
+    /* background-color: rgb(22, 167, 22); */
+    box-shadow: rgba(11, 194, 24, 0.932) 3px 3px 3px, inset rgba(11, 194, 24, 0.932) 2px 2px 2px;
+}
+span{
+    height: 40px;
+    /* border: 1px solid black; */
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 63%;
+    left:55%;
+    align-items: center;
+    transition: 0.2s;
+
+    box-shadow: rgba(184, 183, 183, 0.979) 4px 2px 15px,inset  rgba(189, 189, 189, 0.938) 1px 1px 2px;
+    i{
+        font-size: 18px;
+        transition: 1s;
+    }
+}
+span:hover i{
+    transform: rotate(360deg);
+
+}
+.id-1{
+    background-color: lightgreen;
+    width: 100px;
+    height: 1px;
+    transform: rotate(170deg);
+    position: absolute;
+    top: 47%;
+    left: 47%;
+}
+.id-2{
+    background-color: orange;
+    width: 100px;
+    height: 1px;
+    transform: rotate(-170deg);
+    position: absolute;
+    top: 47%;
+    left: 47%;
+}
